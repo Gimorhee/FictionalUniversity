@@ -23,5 +23,23 @@
     // Naming the title of the website page
     add_action("after_setup_theme", "university_features");
 
+
+    // Its better to put this function inside mu-plugins folder for better accessing/protecting
+    // function university_post_types() {
+    //     // Built-in WP function which registers new Post type in Admin page
+    //     register_post_type("event", array(
+    //         // Setting the new Post type to public
+    //         "public" => true,
+    //         // Setting the name of the Post type to "Events"
+    //         "labels" => array(
+    //             "name" => "Events"
+    //         ),
+    //         // Chaning the menu icon of the newly added post type in Admin page
+    //         "menu_icon" => "dashicons-calendar-alt"
+    //     ));
+    // }
+    // // Adding New Post Type in Admin page
+    // add_action("init", "university_post_types");
+
     define("WP_ALWAYS_RECOMPILE", true);
 ?>
