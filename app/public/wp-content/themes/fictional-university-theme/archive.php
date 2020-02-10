@@ -36,7 +36,7 @@
             </div>
 
             <div class="generic-content">
-              <?php the_excerpt(); ?>
+              <?php if (has_excerpt()) { the_excerpt(); } else { the_content(); }; ?>
               <p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Continue reading &raquo; </a></p>
             </div>
           </div>
